@@ -12,3 +12,9 @@
 if( ! defined( 'ABSPATH') ){
   exit;
 }
+
+/*  
+* Include File
+*/
+
+require_once get_parent_theme_file_path('inc/techbiz-essential-scripts.php');
