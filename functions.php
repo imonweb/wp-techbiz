@@ -12,15 +12,3 @@
 if( ! defined( 'ABSPATH') ){
   exit;
 }
-
-/*  
-* Header Area
-*/
-
-get_header();
-
-/*  
-* Footer Area
-*/
-
-get_footer();
