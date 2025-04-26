@@ -28,18 +28,20 @@
    		Code Start From Here 
 	******************************** -->
 
+  <?php 
+    /*
+    ================================================
+      Hook
+      Hook Name: techbiz_preload_action
+      Callback function techbiz_preloader_action_cb 
+    ================================================
+    */
+
+    do_action( 'techbiz_preloader_action' );
+  ?>
 
 
-
-    <!--==============================
-     Preloader
-  ==============================-->
-    <div class="preloader  ">
-        <button class="vs-btn preloaderCls">Cancel Preloader </button>
-        <div class="preloader-inner">
-            <span class="loader"></span>
-        </div>
-    </div>
+ 
     <!--==============================
     Mobile Menu
   ============================== -->
