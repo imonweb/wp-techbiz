@@ -17,6 +17,7 @@ function techbiz_enqueue_scripts() {
 
   // CSS File
   wp_enqueue_style( 'main-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+  wp_enqueue_style( 'techbiz-fonts', techbiz_google_fonts(), array(), null );
   wp_enqueue_style( 'bootstrap', get_theme_file_uri( '/assets/css/bootstrap.min.css' ), array(), '5.0.0' );
   wp_enqueue_style( 'fontawesome', get_theme_file_uri( '/assets/css/fontawesome.min.css' ), array(), '2.0.0' );
   wp_enqueue_style( 'magnific-popup', get_theme_file_uri( '/assets/css/magnific-popup.min.css' ), array(), '1.0.0' );
@@ -38,3 +39,13 @@ function techbiz_enqueue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'techbiz_enqueue_scripts', 99 );
+
+// Google Fonts Callback Function
+function techbiz_google_fonts() {
+  $font_url = '';
+
+  if( 'off' !== _x('on', 'Google font: on or off', 'techbiz')){
+    $font_url = "https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&family=Fira+Sans:wght@400;500&display=swap";
+  }
+  return $font_url;
+}
