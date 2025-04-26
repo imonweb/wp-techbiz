@@ -13,11 +13,11 @@ if( ! defined( 'ABSPATH') ){
   exit;
 }
 
-/*  
-* Include File
-*/
+// Callback Functions
 
-require_once get_parent_theme_file_path('inc/techbiz-essential-scripts.php');
-
-// Theme Setup
-require_once get_parent_theme_file_path( 'inc/theme-setup.php');
+if( ! function_exists( 'techbiz_theme_setup' ) ){
+  function techbiz_theme_setup(){
+    add_theme_support( 'title-tag' );
+  }
+}
+add_action( 'after_setup_theme', 'techbiz_theme_setup', 10 );

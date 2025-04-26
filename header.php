@@ -1,14 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>TechBiz - IT Solution & Service HTML Template - Blog List</title>
-    <meta name="author" content="vecuro">
-    <meta name="description" content="TechBiz - IT Solution & Service HTML Template">
-    <meta name="keywords" content="TechBiz - IT Solution & Service HTML Template" />
-    <meta name="robots" content="INDEX,FOLLOW">
+    <!-- <title>TechBiz - IT Solution & Service HTML Template - Blog List</title> -->
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +13,9 @@
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+
+  <?php wp_body_open(); ?>
 
 
     <!--[if lte IE 9]>
