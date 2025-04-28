@@ -317,21 +317,42 @@ Redux::set_help_sidebar( $opt_name, $content );
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Basic Fields', 'techbiz' ),
-		'id'               => 'basic',
-		'desc'             => esc_html__( 'These are really basic fields!', 'techbiz' ),
+		'title'            => esc_html__( 'Preloader', 'techbiz' ),
+		'id'               => 'techbiz_preloader',
+		'desc'             => esc_html__( 'This option is for preloader', 'techbiz' ),
 		'customizer_width' => '400px',
 		'icon'             => 'el el-home',
 	)
 );
 
-require_once Redux_Core::$dir . '../sample/sections/basic-fields/checkbox.php';
+// require_once Redux_Core::$dir . '../sample/sections/basic-fields/checkbox.php';
 require_once Redux_Core::$dir . '../sample/sections/basic-fields/radio.php';
 require_once Redux_Core::$dir . '../sample/sections/basic-fields/sortable.php';
 require_once Redux_Core::$dir . '../sample/sections/basic-fields/text.php';
 require_once Redux_Core::$dir . '../sample/sections/basic-fields/multi-text.php';
 require_once Redux_Core::$dir . '../sample/sections/basic-fields/password.php';
 require_once Redux_Core::$dir . '../sample/sections/basic-fields/textarea.php';
+
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'            => esc_html__( 'Checkbox', 'techbiz' ),
+		'id'               => 'techbiz_preloader_option',
+		'subsection'       => true,
+		'customizer_width' => '450px',
+		'fields'           => array(
+			array(
+				'id'       => 'techbiz_preloader_text',
+				'type'     => 'text',
+				'title'    => esc_html__( 'Preloader Text', 'techbiz' ),
+				'subtitle' => esc_html__( 'Change Your Preloader Text', 'techbiz' ),
+				'default'  => esc_html__( 'Cancel Preloader', 'techbiz' ),
+			),
+			 
+		),
+	)
+);
+// phpcs:enable
 
 // -> START Editors.
 Redux::set_section(
