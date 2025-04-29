@@ -348,6 +348,27 @@ Redux::set_section(
 				'subtitle' => esc_html__( 'Change Your Preloader Text', 'techbiz' ),
 				'default'  => esc_html__( 'Cancel Preloader', 'techbiz' ),
 			),
+      array(
+				'id'       => 'techbiz_preloader_text_color',
+				'type'     => 'color',
+				'title'    => esc_html__( 'Preloader Text Color', 'techbiz' ),
+				'subtitle' => esc_html__( 'Change Your Preloader Text Color', 'techbiz' ),
+				'default'  => esc_html__( 'Cancel Preloader', 'techbiz' ),
+			),
+      array(
+				'id'          => 'opt-color-title',
+				'type'        => 'color',
+				'output'      => array(
+					'color'     => '.preloader .vs-btn',
+					'important' => true,
+				),
+				'title'       => esc_html__( 'Preload Text Color', 'techbiz' ),
+				'subtitle'    => esc_html__( 'Preload Text Color', 'techbiz' ),
+				'default'     => '#000000',
+				// 'color_alpha' => true,
+				'transparent' => false,
+				'validate'    => 'color',
+			),
 			 
 		),
 	)

@@ -15,13 +15,19 @@ if( ! defined( 'ABSPATH') ){
 
 if( ! function_exists('techbiz_preloader_action_cb')){
   function techbiz_preloader_action_cb(){
-    ?>
-      <div class="preloader  ">
-          <button class="vs-btn preloaderCls">Cancel Preloader </button>
-          <div class="preloader-inner">
-              <span class="loader"></span>
-          </div>
-      </div>
-    <?php
+    global $techbiz_opt;
+
+    $techbiz_preloader_text = $techbiz_opt['techbiz_preloader_text'];
+    // var_dump($techbiz_preloader_text);
+    
+      echo '<div class="preloader  ">';
+          if(! empty($techbiz_preloader_text)){
+          echo '<button class="vs-btn preloaderCls">'. esc_html($techbiz_preloader_text) .' </button>';
+          }
+          echo '<div class="preloader-inner">';
+              echo '<span class="loader"></span>';
+          echo '</div>';
+      echo '</div>';
+    
   }
 }
