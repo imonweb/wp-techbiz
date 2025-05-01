@@ -18,6 +18,9 @@ if( ! defined( 'ABSPATH') ){
 if( ! function_exists( 'techbiz_theme_setup' ) ){
   function techbiz_theme_setup(){
     add_theme_support( 'title-tag' );
+
+    // Custom Logo
+    add_theme_support( 'custom-logo' );
   }
 }
 add_action( 'after_setup_theme', 'techbiz_theme_setup', 10 );

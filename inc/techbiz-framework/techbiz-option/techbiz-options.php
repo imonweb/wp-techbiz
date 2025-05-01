@@ -336,7 +336,7 @@ require_once Redux_Core::$dir . '../sample/sections/basic-fields/textarea.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Checkbox', 'techbiz' ),
+		'title'            => esc_html__( 'Preloader', 'techbiz' ),
 		'id'               => 'techbiz_preloader_option',
 		'subsection'       => true,
 		'customizer_width' => '450px',
@@ -369,6 +369,50 @@ Redux::set_section(
 				'transparent' => false,
 				'validate'    => 'color',
 			),
+			 
+		),
+	)
+);
+
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'            => esc_html__( 'Logo', 'techbiz' ),
+		'id'               => 'techbiz_logo_area',
+		'subsection'       => true,
+		'customizer_width' => '450px',
+		'fields'           => array(
+			array(
+				'id'           => 'techbiz_logo',
+				'type'         => 'media',
+				'url'          => true,
+				'title'        => esc_html__( 'Upload Site Logo', 'techbiz' ),
+				'compiler'     => 'true',
+				'desc'         => esc_html__( 'Set Your Website Logo', 'techbiz' ),
+				'subtitle'     => esc_html__( 'Upload any media using the WordPress native uploader', 'techbiz' ),
+				'preview_size' => 'full',
+			),
+      // array(
+			// 	'id'       => 'techbiz_preloader_text_color',
+			// 	'type'     => 'color',
+			// 	'title'    => esc_html__( 'Preloader Text Color', 'techbiz' ),
+			// 	'subtitle' => esc_html__( 'Change Your Preloader Text Color', 'techbiz' ),
+			// 	'default'  => esc_html__( 'Cancel Preloader', 'techbiz' ),
+			// ),
+      // array(
+			// 	'id'          => 'opt-color-title',
+			// 	'type'        => 'color',
+			// 	'output'      => array(
+			// 		'color'     => '.preloader .vs-btn',
+			// 		'important' => true,
+			// 	),
+			// 	'title'       => esc_html__( 'Preload Text Color', 'techbiz' ),
+			// 	'subtitle'    => esc_html__( 'Preload Text Color', 'techbiz' ),
+			// 	'default'     => '#000000',
+			// 	// 'color_alpha' => true,
+			// 	'transparent' => false,
+			// 	'validate'    => 'color',
+			// ),
 			 
 		),
 	)
