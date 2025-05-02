@@ -21,6 +21,11 @@ if( ! function_exists( 'techbiz_theme_setup' ) ){
 
     // Custom Logo
     add_theme_support( 'custom-logo' );
+
+    // Register Nav Menu
+    register_nav_menus( array(
+      'primary_menu' => esc_html( 'Primary Menu', 'techbiz'),
+    ) );
   }
 }
 add_action( 'after_setup_theme', 'techbiz_theme_setup', 10 );
