@@ -133,7 +133,8 @@ if( ! function_exists('techbiz_header_cb')){
                             <nav class="main-menu menu-style1 d-none d-lg-block">
                               <?php 
                                 wp_nav_menu( array(
-                                  'theme_location' => 'primary_menu'
+                                  'theme_location' => 'primary_menu',
+                                  'container'      => ''
                                 ) );
                               ?>
                             </nav>

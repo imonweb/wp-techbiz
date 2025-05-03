@@ -25,6 +25,7 @@ if( ! function_exists( 'techbiz_theme_setup' ) ){
     // Register Nav Menu
     register_nav_menus( array(
       'primary_menu' => esc_html( 'Primary Menu', 'techbiz'),
+      'mobile_menu' => esc_html( 'Mobile Menu', 'techbiz'),
     ) );
   }
 }
