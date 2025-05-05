@@ -19,7 +19,9 @@ if( ! defined( 'ABSPATH') ){
 
 get_header();
 
-echo '<div class="page-content">';
+echo '<div class="page-content space">';
+  echo '<div class="container">';
+    echo '<div class="row">';
 
 if( have_posts() ){
   while( have_posts() ){
@@ -29,6 +31,10 @@ if( have_posts() ){
   }
   wp_reset_postdata();
 }
+
+    echo '</div>';
+  echo '</div>';
+echo '</div>';
 
 /*  
 * Footer Area
