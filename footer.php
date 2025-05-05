@@ -41,22 +41,13 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-md-6 col-lg-4 col-xl-auto">
+                        <?php if(is_active_sidebar('techbiz-footer-1')){ ?>
                         <div class="widget footer-widget">
-                            <h3 class="widget_title">About Us</h3>
-                            <div class="vs-widget-about">
-                                <p class="footer-text">Intrinsicly evisculate emerging cutting edge scenarios redefine
-                                    future-proof e-markets demand line</p>
-                                <div class="footer-social">
-                                    <a href="blog.html#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="blog.html#"><i class="fab fa-twitter"></i></a>
-                                    <a href="blog.html#"><i class="fab fa-instagram"></i></a>
-                                    <a href="blog.html#"><i class="fab fa-behance"></i></a>
-                                    <a href="blog.html#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
+                             <?php dynamic_sidebar('techbiz-footer-1'); ?>
                         </div>
+                        <?php } ?>
                     </div>
-                    <div class="col-md-6 col-lg-2 col-xl-auto">
+                    <!-- <div class="col-md-6 col-lg-2 col-xl-auto">
                         <div class="widget widget_nav_menu  footer-widget">
                             <h3 class="widget_title">Links</h3>
                             <div class="menu-all-pages-container">
@@ -93,7 +84,7 @@
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
